@@ -74,26 +74,25 @@ The repository generates:
 - Images or video frames with detected pedestrians
 - Bounding boxes around pedestrians
 - Confidence scores for each detection
-
+- 
 ## System Setup
 
-Run the following lines to set up the system 
+Run the following steps to set up the system.
 
 * Create a new environment
-  * conda create --name pedestrian
-* Activate environment
-  * conda activate pedestrian
-* Install all libraries
-  * pip install opencv-python
-  * pip install numpy
-  * pip install matplotlib
-  * pip install scikit-learn
-  * pip install pillow
-  * install git [installation instruction for windows](https://github.com/git-guides/install-git)
-* Change the directory where you want to download all the files
-  * cd Directory (Example: cd C:/Users/tushar/Documents) 
-* Download all the files
-  * git clone https://github.com/stushar047/Pedestrian_Detection.git  
+  * `conda create --name pedestrian python=3.9`
+* Activate the environment
+  * `conda activate pedestrian`
+* Change to the directory where you want to download the files
+  * `cd Directory`  
+    Example: `cd C:/Users/tushar/Documents`
+* Clone the repository
+  * `git clone https://github.com/stushar047/Pedestrian_Detection.git`
+* Move into the repository
+  * `cd Pedestrian_Detection`
+* Install the required libraries
+  * `pip install tensorflow numpy pandas matplotlib opencv-python`
+
 
 ## Run the code
 
