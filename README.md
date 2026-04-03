@@ -110,7 +110,4 @@ Bounding boxes and confidence scores for detected pedestrians.
   * Detection consistency across frames (for video)
 
 ## Paper References
-- MS Thesis References - \href{https://digital.library.txst.edu/items/28c90d7f-cc88-4358-a654-9b46173ffac6}
-- J. Redmon et al., *You Only Look Once: Unified, Real-Time Object Detection*, CVPR 2016  
-- S. Ren et al., *Faster R-CNN: Towards Real-Time Object Detection*, NeurIPS 2015  
-- S. Zhang et al., *How Far Are We from Solving Pedestrian Detection?*, CVPR 2016  
+- MS Thesis References - https://digital.library.txst.edu/items/28c90d7f-cc88-4358-a654-9b46173ffac6
