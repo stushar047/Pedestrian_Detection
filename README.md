@@ -14,35 +14,47 @@ The repository is organized around two main stages:
 ### Important Code Files
 
 #### `main.py`
-This is the main execution script. It loads input images or video, runs the pedestrian detection pipeline, and visualizes or saves the detection results. It acts as the entry point of the system.
+This is the main execution script of the project. It handles loading input data (images or video), initializing the pedestrian detection pipeline, and running inference. It also manages visualization and saving of detection outputs.
 
 Key responsibilities:
-- Load input images or video streams
-- Run the detection pipeline
-- Display or save output with bounding boxes
+- Parse input arguments (image/video path)
+- Load input frames
+- Call detection functions
+- Display or save output results with bounding boxes
+
+---
 
 #### `detector.py`
-This file contains the core pedestrian detection logic. It applies the detection model or algorithm to identify pedestrians and generate bounding boxes along with confidence scores.
+This file implements the core pedestrian detection algorithm. It applies the trained detection model or feature-based approach to each frame and identifies pedestrian regions.
 
 Key responsibilities:
-- Perform model inference
-- Detect pedestrians in input frames
-- Generate bounding boxes and scores
+- Load or initialize the detection model
+- Process each frame/image
+- Perform detection using sliding window or model inference
+- Generate bounding boxes with associated confidence scores
+
+---
 
 #### `utils.py`
-This file contains helper functions for preprocessing, visualization, and post-processing.
+This file provides supporting utility functions used across the pipeline.
 
 Key responsibilities:
-- Image preprocessing and resizing
-- Drawing bounding boxes
-- Filtering detections
-- Handling post-processing operations
+- Image preprocessing (resizing, normalization)
+- Drawing bounding boxes and annotations
+- Filtering overlapping detections (e.g., thresholding or suppression)
+- Helper functions for handling image/video data
+
+---
 
 #### `model/`
-This directory contains trained models or configuration files used for pedestrian detection.
+This directory contains the trained model files or configuration parameters used for pedestrian detection. These models are used during inference to detect pedestrians in input frames.
+
+---
 
 #### `data/`
-This directory contains input images or videos used for testing and evaluation.
+This directory contains sample input images or videos used for testing and evaluation of the detection pipeline.
+
+---
 
 ### Overall Pipeline
 
