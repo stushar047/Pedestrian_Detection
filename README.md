@@ -4,7 +4,7 @@
 
 This project presents a computer vision and machine learning pipeline for **pedestrian detection**. The workflow begins with raw input images or video frames and processes them through preprocessing and detection models to identify pedestrians. The final goal is to accurately localize pedestrians using bounding boxes for applications such as autonomous driving, surveillance, and robotics.
 
-<img src="Pedestrian.jpg" alt="Alt text" style="height: 200; width: auto;">
+<img src="Pedestrain.jpg" alt="Alt text" style="height: 200; width: auto;">
 
 The repository is organized around two main stages:
 
